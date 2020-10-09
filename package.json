@@ -8,6 +8,16 @@
     "lint": "vue-cli-service lint",
     "commit": "git-cz"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+ },
+ "commitlint": {
+  "extends": [
+    "@commitlint/config-conventional"
+  ]
+},
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -47,15 +57,7 @@
   ],
   "config": {
     "commitizen": {
-      "husky": {
-        "hooks": {
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-     },
-      "path": "./node_modules/cz-conventional-changelog",
-      "extends": [
-        "@commitlint/config-conventional"
-      ]
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
