@@ -1,2 +1,2 @@
-git test 11
+git test
 Git tracks changes of files.
