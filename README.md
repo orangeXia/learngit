@@ -26,3 +26,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 newLine 2
 
 newline 3
+
+one commit
